@@ -9,7 +9,7 @@ function App() {
   };
 
   const handlePredict = async () => {
-    const response = await fetch("https://samplemvp.onrender.com/predict", {
+    const response = await fetch("https://house-price-predict-samplemvp.onrender.com/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ features: [features.rooms, features.size, features.age] }),
